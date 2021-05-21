@@ -78,7 +78,7 @@ def test_age_in_hours(date_of_birth, date_of_death, expected_hours):
     [
         (datetime(2021, 1, 1), datetime(2021, 1, 2), 1),
         (datetime(2021, 1, 1), datetime(2021, 1, 3), 2),
-        (datetime(2021, 1, 1), None, 20),
+        (datetime(2021, 1, 1), None, 140),
     ],
 )
 def test_date_diff(date_from, date_to, expected_days):
