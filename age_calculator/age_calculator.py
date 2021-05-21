@@ -34,4 +34,11 @@ def date_diff(date_from, date_to=None):
 
     """
     date_to = arrow.get(date_to) if date_to else arrow.utcnow()
-    return (date_to - arrow.get(date_from)).days
+   # return (date_to - arrow.get(date_from)).days
+    date = (date_to - arrow.get(date_from)).days
+    if date < 0:
+        raise Exception("ValueError")
+
+    else:
+        date_1 = date
+    return date_1
